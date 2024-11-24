@@ -27,7 +27,13 @@ endif()
 # Our Project
 add_executable(${PROJECT_NAME} src/main.cpp
         src/Game/Game.cpp
-        src/Game/Game.h)
+        src/Game/Game.h
+        src/Window/Window.cpp
+        src/Window/Window.h
+        src/Chess/Chess.cpp
+        src/Chess/Chess.h
+        src/Map/Map.cpp
+        src/Map/Map.h)
 target_link_libraries(${PROJECT_NAME} PRIVATE raylib)
 
 # Web Configurations
