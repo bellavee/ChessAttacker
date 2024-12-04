@@ -28,12 +28,26 @@ endif()
 add_executable(${PROJECT_NAME} src/main.cpp
         src/Game/Game.cpp
         src/Game/Game.h
-        src/Window/Window.cpp
-        src/Window/Window.h
         src/Chess/Chess.cpp
         src/Chess/Chess.h
         src/Map/Map.cpp
-        src/Map/Map.h)
+        src/Map/Map.h
+        src/Board/Board.cpp
+        src/Board/Board.h
+        src/Sprite/Sprite.cpp
+        src/Sprite/Sprite.h
+        include/Config.h
+        src/Chess/King/King.cpp
+        src/Chess/King/King.h
+        include/Struct.h
+        src/Chess/Rock/Rock.cpp
+        src/Chess/Rock/Rock.h
+        src/Chess/Bishop/Bishop.cpp
+        src/Chess/Bishop/Bishop.h
+        src/Chess/Knight/Knight.cpp
+        src/Chess/Knight/Knight.h
+        src/Chess/Queen/Queen.cpp
+        src/Chess/Queen/Queen.h)
 target_link_libraries(${PROJECT_NAME} PRIVATE raylib)
 
 # Web Configurations
